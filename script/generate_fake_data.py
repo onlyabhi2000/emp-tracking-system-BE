@@ -5,7 +5,6 @@ from faker import Faker
 
 fake = Faker()
 
-# Config
 N_EMPLOYEES = 5000
 N_WEEKS = 4
 DAYS_PER_WEEK = 7
@@ -92,6 +91,6 @@ if __name__ == "__main__":
     write_csv(SHIFT_CSV, ["employee_id", "week", "shift_type"], shifts)
     write_csv(ATTENDANCE_CSV, ["employee_id", "login_time", "logout_time"], attendance)
 
-    print(f"✅ Generated {len(employees)} employees → {EMPLOYEE_CSV}")
-    print(f"✅ Generated {len(shifts)} shift records → {SHIFT_CSV}")
-    print(f"✅ Generated {len(attendance)} attendance records → {ATTENDANCE_CSV}")
+    print(f"Generated {len(employees)} employees → {EMPLOYEE_CSV}")
+    print(f"Generated {len(shifts)} shift records → {SHIFT_CSV}")
+    print(f"Generated {len(attendance)} attendance records → {ATTENDANCE_CSV}")
